@@ -1,12 +1,11 @@
-import type { Preview } from "@storybook/vue3";
-
-const preview: Preview = {
+/** @type { import('@storybook/vue3').Preview } */
+import "../assets/css/output.css";
+const preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/,
+        date: /Date$/i,
       },
     },
   },

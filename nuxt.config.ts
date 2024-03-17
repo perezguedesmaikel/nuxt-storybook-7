@@ -9,4 +9,12 @@ export default defineNuxtConfig({
     storybookRoute: '.storybook',
     port: 6006,
   },
+  css: ['~/assets/css/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
 })
